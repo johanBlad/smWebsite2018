@@ -37,6 +37,10 @@ header.masthead {
       margin-bottom: 25px;
       font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
       text-transform: uppercase; }
+    header.masthead .intro-text .intro-follower {
+      font-size: 12px;
+      font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-style: italic;}
 
 @media (min-width: 768px) {
   header.masthead .intro-text {
@@ -54,7 +58,13 @@ header.masthead {
       line-height: 75px;
       margin-bottom: 50px;
       font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      text-transform: uppercase; } }
+      text-transform: uppercase; } 
+    header.masthead .intro-text .intro-follower {
+      font-size: 18px;
+      font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-style: italic;
+    }
+    }
 
 h1 {
   font-size: 4rem;
