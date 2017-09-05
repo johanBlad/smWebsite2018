@@ -60,11 +60,20 @@ h1 {
 
 .bg-faded {
   background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
 }
 
 .bg-overlay {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.15);
+
+  border-radius: 5px;
 }
+@media (min-width: 992px) {
+  .bg-overlay {
+    background-color: rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+  }
+}  
 
 hr.divider {
   border-color: #292b2c;
@@ -79,6 +88,10 @@ hr.divider {
   pointer-events: auto;
 }
 
+li.active-link {
+  color: black;
+}
+
 #mainNav {
   background-color: rgba(255, 255, 255, 0.85);}
   #mainNav .navbar-toggler {
@@ -86,7 +99,7 @@ hr.divider {
     right: 0;
     padding: 13px;
     text-transform: uppercase;
-    color: black;
+    color: rgba(0, 0, 0, 0.5); 
     border: 0;
     background-color: transparent;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -101,11 +114,11 @@ hr.divider {
     font-weight: 400;
     padding: 0.75em 0;
     letter-spacing: 1px;
-    color: white;
+    color: whitesmoke;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase; }
     #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-      color: purple; }
+      color: #2c002f; }
 
 @media (min-width: 992px) {
   #mainNav {
@@ -132,50 +145,6 @@ hr.divider {
         font-size: 1.25em;
         padding: 12px 0; } }
 
-.navbar-custom .navbar-brand {
-  color: white;
-}
-
-.navbar-custom .navbar-brand:focus, .navbar-dark .navbar-brand:hover {
-  color: white;
-}
-
-.navbar-custom .navbar-nav .nav-link {
-  color: white;
-}
-
-.navbar-custom .navbar-nav .nav-link:focus{
-  color: white;
-}
-
-.navbar-dark .navbar-nav .nav-link:hover {
-  color: purple;
-}
-
-.navbar-custom .navbar-nav .nav-link.disabled {
-  color: rgba(255, 255, 255, 0.25);
-}
-
-.navbar-custom .navbar-nav .show > .nav-link,
-.navbar-custom .navbar-nav .active > .nav-link,
-.navbar-custom .navbar-nav .nav-link.show,
-.navbar-custom .navbar-nav .nav-link.active {
-  color: white;
-}
-
-.navbar-custom .navbar-toggler {
-  color: rgba(255, 255, 255, 0.5);
-  border-color: rgba(255, 255, 255, 0.1);
-}
-
-.navbar-custom .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-}
-
-.navbar-custom .navbar-text {
-  color: white;
-}
-
 header.masthead {
   text-align: center;
   color: white;
@@ -189,14 +158,14 @@ header.masthead {
       margin-bottom: 25px;
       font-family: "Gill-sans", "sans-serif"; }
     header.masthead .intro-text .intro-heading {
-      font-size: 50px;
+      font-size: 34px;
       font-weight: 700;
       line-height: 50px;
       margin-bottom: 25px;
       font-family: "Gill-sans", "sans-serif";
       text-transform: uppercase; }
     header.masthead .intro-text .intro-follower {
-      font-size: 12px;
+      font-size: 14px;
       font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
