@@ -15,8 +15,8 @@ body {
 
 h1, h2, h3, h4, h5, h6, .text-heading {
   /*font-family: "Josefin Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
-  font-family: "Droid Serif", "sans-serif";
-  /*font-family: "Gill-sans", "sans-serif";*/
+  /*font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+  font-family: "Gill-sans", "sans-serif";
 }
 
 hr.style { 
@@ -59,7 +59,7 @@ h1 {
 }
 
 .bg-faded {
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .bg-overlay {
@@ -208,14 +208,14 @@ header.masthead {
       font-size: 40px;
       line-height: 40px;
       margin-bottom: 25px;
-      font-family: "Gill-sans", "sans-serif";
+      font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     }
     header.masthead .intro-text .intro-heading {
       font-size: 75px;
       font-weight: 700;
       line-height: 75px;
       margin-bottom: 50px;
-      font-family: "Gill-sans", "sans-serif";
+      font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
       text-transform: uppercase; } 
     header.masthead .intro-text .intro-follower {
       font-size: 18px;
