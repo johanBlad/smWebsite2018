@@ -15,8 +15,8 @@ body {
 
 h1, h2, h3, h4, h5, h6, .text-heading {
   /*font-family: "Josefin Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
-  /*font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
-  font-family: "Gill-sans", "sans-serif";
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /*font-family: "Gill-sans", "sans-serif";*/
 }
 
 hr.style { 
@@ -31,6 +31,11 @@ hr.style {
 
 h1 {
   font-size: 4rem;
+}
+
+h4 {
+  font-size: 18px;
+  font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .tagline-upper {
@@ -150,8 +155,8 @@ header.masthead {
   color: white;
 }
   header.masthead .intro-text {
-    padding-top: 50px;
-    padding-bottom: 50px; }
+    padding-top: 30px;
+    padding-bottom: 30px; }
     header.masthead .intro-text .intro-lead-in {
       font-size: 22px;
       line-height: 22px;
@@ -204,7 +209,7 @@ header.masthead {
     width: 2px;
     margin-left: -1.5px;
     content: '';
-    background-color: #f1f1f1; }
+    background-color: purple; }
   .timeline > li {
     position: relative;
     min-height: 50px;
@@ -239,7 +244,8 @@ header.masthead {
       margin-left: 0;
       text-align: center;
       color: white;
-      border: 7px solid #f1f1f1;
+      border: 5px solid rgba(130, 40, 180, 0.99);
+      /*border: 5px solid gray;*/
       border-radius: 100%; }
       .timeline > li .timeline-image h4 {
         font-size: 10px;
@@ -327,7 +333,7 @@ header.masthead {
 
 ul.social-buttons {
   margin-bottom: 0;
-  padding-top: 10px; }
+  padding-top: 15px; }
   ul.social-buttons li a {
     font-size: 20px;
     line-height: 40px;
