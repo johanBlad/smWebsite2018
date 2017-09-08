@@ -8,10 +8,13 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Business Casual - Start Bootstrap Theme</title>
+    <title>Se Möjligheterna 2018</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- PHP file for contact form -->
+    <!--<?php include('contact_form.php'); ?>-->
 
     <!-- Custom fonts for this template -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -82,12 +85,12 @@
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
                   <a href="#">
-                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-linkedin"></i>
                   </a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-linkedin"></i>
+                  <a href="mailto:sts-sm2@utn.se">
+                    <i class="fa fa-envelope"></i>
                   </a>
                 </li>
               </ul>
@@ -100,12 +103,12 @@
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
                   <a href="#">
-                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-linkedin"></i>
                   </a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-linkedin"></i>
+                  <a href="mailto:sts-sm2@utn.se">
+                    <i class="fa fa-envelope"></i>
                   </a>
                 </li>
               </ul>
@@ -118,12 +121,12 @@
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
                   <a href="#">
-                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-linkedin"></i>
                   </a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-linkedin"></i>
+                  <a href="mailto:sts-sm2@utn.se">
+                    <i class="fa fa-envelope"></i>
                   </a>
                 </li>
               </ul>
@@ -139,27 +142,32 @@
         <h2 class="text-center text-lg text-uppercase my-0">Kontakt
         </h2>
         <hr class="style">
-        <form>
+        <form role="form" method="post" action="<?= $_SERVER['PHP_SELF']; ?>">
           <div class="row">
             <div class="form-group col-lg-4">
-              <label class="text-heading">Name</label>
-              <input type="text" class="form-control">
+              <label for="name" class="text-heading">Namn</label>
+              <input type="text" class="form-control" id="name" name="name" value="<?php echo htmlspecialchars($_POST['name']); ?>">
+              <?php echo "<p class='text-danger'>$errName</p>";?>
             </div>
             <div class="form-group col-lg-4">
-              <label class="text-heading">Email Address</label>
-              <input type="email" class="form-control">
+              <label for="email"class="text-heading">Email Adress</label>
+              <input type="email" class="form-control" id="email" name="email" value="<?php echo htmlspecialchars($_POST['email']); ?>">
+              <?php echo "<p class='text-danger'>$errEmail</p>";?>
             </div>
             <div class="form-group col-lg-4">
-              <label class="text-heading">Phone Number</label>
-              <input type="tel" class="form-control">
+              <label for="tel" class="text-heading">Telefon</label>
+              <input type="tel" class="form-control" id="tel" name="tel" value="<?php echo htmlspecialchars($_POST['tel']); ?>">
             </div>
             <div class="clearfix"></div>
             <div class="form-group col-lg-12">
-              <label class="text-heading">Message</label>
-              <textarea class="form-control" rows="6"></textarea>
+              <label for="message" class="text-heading">Meddelande</label>
+              <textarea class="form-control" rows="6" name="message"><?php echo htmlspecialchars($_POST['message']);?></textarea>
             </div>
             <div class="form-group col-lg-12">
-              <button type="submit" class="btn btn-secondary">Submit</button>
+              <button type="submit" class="btn btn-secondary">Skicka</button>
+            </div>
+            <div class="form-group col-lg-12">
+              <?php echo $result; ?>
             </div>
           </div>
         </form>
