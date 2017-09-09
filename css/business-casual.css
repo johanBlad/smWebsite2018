@@ -15,6 +15,15 @@ body {
   text-justify: inter-word;
 }
 
+.content-marker {
+  margin-bottom: 65px;
+}
+
+@media (min-width: 768px) {
+  .content-marker {
+  margin-bottom: 80px;
+  }
+}
 h1, h2, h3, h4, h5, h6, .text-heading {
   /*font-family: "Josefin Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
   font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
@@ -120,15 +129,18 @@ li.active-link {
   }
   .custom-nav-link-active > a:hover,
   .custom-nav-link-active > a:focus {
-  color: #a515ff !important;
+    color: #a515ff !important;
+  }
 }
 
 #mainNav {
+  padding-top: 3px;
+  padding-bottom: 3px;
   background-color: #222222; }
   #mainNav .navbar-toggler {
     font-size: 12px;
     right: 0;
-    padding: 13px;
+    padding: 12px;
     text-transform: uppercase;
     color: white;
     border: 0;
@@ -143,7 +155,7 @@ li.active-link {
   #mainNav .navbar-nav .nav-item .nav-link {
     font-size: 90%;
     font-weight: 400;
-    padding: 0.75em 0;
+    padding: 9px;
     letter-spacing: 1px;
     color: white;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -234,7 +246,7 @@ header.masthead {
 }
   header.masthead .intro-text {
     padding-top: 80px;
-    padding-bottom: 30px; }
+    padding-bottom: 10px; }
     header.masthead .intro-text .intro-lead-in {
       font-size: 22px;
       line-height: 22px;
@@ -255,7 +267,7 @@ header.masthead {
 @media (min-width: 768px) {
   header.masthead .intro-text {
     padding-top: 250px;
-    padding-bottom: 100px; }
+    padding-bottom: 50px; }
     header.masthead .intro-text .intro-lead-in {
       font-size: 40px;
       line-height: 40px;
