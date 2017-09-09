@@ -5,7 +5,7 @@
  */
 
 body {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
   background: url('../img/backgrounds/bg8.png') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -17,7 +17,7 @@ body {
 
 h1, h2, h3, h4, h5, h6, .text-heading {
   /*font-family: "Josefin Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
   /*font-family: "Gill-sans", "sans-serif";*/
 }
 
@@ -66,7 +66,7 @@ h4 {
 }
 
 .bg-faded {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 1);
   border-radius: 5px;
 }
 
@@ -100,7 +100,7 @@ li.active-link {
 }
 
 #mainNav {
-  background-color: rgba(255, 255, 255, 0.85);}
+  background-color: rgba(255, 255, 255, 1);}
   #mainNav .navbar-toggler {
     font-size: 12px;
     right: 0;
@@ -136,7 +136,7 @@ li.active-link {
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
-    background-color: rgba(255, 255, 255, 0.85); }
+    background-color: rgba(255, 255, 255, 1); }
     #mainNav .navbar-brand {
       font-size: 1.75em;
       -webkit-transition: all 0.3s;
