@@ -99,7 +99,83 @@ li.active-link {
   color: black;
 }
 
+.footer-bottom {
+  background-color: #222222;
+}
+
+.custom-nav-link-active {
+  color: white;
+  background-color: #a515ff;
+  border-radius: 5px
+}
+.custom-nav-link-active > a:hover,
+.custom-nav-link-active > a:focus {
+  color: white !important;
+}
+
+@media (min-width: 768px) {
+  .custom-nav-link-active {
+    background-color: transparent;
+    border-bottom: 5px white solid;
+  }
+  .custom-nav-link-active > a:hover,
+  .custom-nav-link-active > a:focus {
+  color: #a515ff !important;
+}
+
 #mainNav {
+  background-color: #222222; }
+  #mainNav .navbar-toggler {
+    font-size: 12px;
+    right: 0;
+    padding: 13px;
+    text-transform: uppercase;
+    color: white;
+    border: 0;
+    background-color: #a515ff;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-transform: uppercase; }
+  #mainNav .navbar-brand {
+    color: #a515ff;
+    font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive; }
+    #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+      color: #a515ff; }
+  #mainNav .navbar-nav .nav-item .nav-link {
+    font-size: 90%;
+    font-weight: 400;
+    padding: 0.75em 0;
+    letter-spacing: 1px;
+    color: white;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-transform: uppercase; }
+    #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+      color: #a515ff; }
+
+@media (min-width: 992px) {
+  #mainNav {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    border: none;
+    background-color: transparent; }
+    #mainNav .navbar-brand {
+      font-size: 1.75em;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s; }
+    #mainNav .navbar-nav .nav-item .nav-link {
+      padding: 1.1em 1em !important; }
+    #mainNav.navbar-shrink {
+      padding-top: 0;
+      padding-bottom: 0;
+      background-color: #222222; }
+      #mainNav.navbar-shrink .navbar-brand {
+        font-size: 1.25em;
+        padding: 12px 0; } }
+
+/*#mainNav {
   background-color: rgba(255, 255, 255, 1);}
   #mainNav .navbar-toggler {
     font-size: 12px;
@@ -150,26 +226,26 @@ li.active-link {
       background-color: #222222; }
       #mainNav.navbar-shrink .navbar-brand {
         font-size: 1.25em;
-        padding: 12px 0; } }
+        padding: 12px 0; } }*/
 
 header.masthead {
   text-align: center;
   color: white;
 }
   header.masthead .intro-text {
-    padding-top: 30px;
+    padding-top: 80px;
     padding-bottom: 30px; }
     header.masthead .intro-text .intro-lead-in {
       font-size: 22px;
       line-height: 22px;
       margin-bottom: 25px;
-      font-family: "Gill-sans", "sans-serif"; }
+      font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
     header.masthead .intro-text .intro-heading {
       font-size: 34px;
       font-weight: 700;
       line-height: 50px;
       margin-bottom: 25px;
-      font-family: "Gill-sans", "sans-serif";
+      font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
       text-transform: uppercase; }
     header.masthead .intro-text .intro-follower {
       font-size: 14px;
@@ -178,8 +254,8 @@ header.masthead {
 
 @media (min-width: 768px) {
   header.masthead .intro-text {
-    padding-top: 100px;
-    padding-bottom: 100; }
+    padding-top: 250px;
+    padding-bottom: 100px; }
     header.masthead .intro-text .intro-lead-in {
       font-size: 40px;
       line-height: 40px;
@@ -191,7 +267,7 @@ header.masthead {
       font-weight: 700;
       line-height: 75px;
       margin-bottom: 50px;
-      font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
       text-transform: uppercase; } 
     header.masthead .intro-text .intro-follower {
       font-size: 18px;
