@@ -25,9 +25,7 @@ body {
   }
 }
 h1, h2, h3, h4, h5, h6, .text-heading {
-  /*font-family: "Josefin Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
-  font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
-  /*font-family: "Gill-sans", "sans-serif";*/
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 hr.style { 
@@ -446,12 +444,14 @@ ul.social-buttons {
 }
 .team-member img {
   margin: 0 auto;
-  border: 7px solid white;
-}
+  width: 300px;
+  height: 300px;
+  border: 7px solid white; }
 .team-member h4 {
-  margin-top: 25px;
+  margin-top: 10px;
   margin-bottom: 0;
   text-transform: none;
+  font-weight: 700;
 }
 .team-member p {
   margin-top: 0;
